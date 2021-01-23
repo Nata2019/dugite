@@ -1,0 +1,75 @@
+<html>
+<head><title>Моя гра<title><head>
+<body>
+<?php
+$player1 = "Я";
+$player2 = "Робот";
+$player3 = "Робот1";
+$player1Points = 0;
+$player2Points = 0;
+$player3Points = 0;
+
+echo "Бросаем кости игроку - {$player1}", '<br>';
+
+$player1Points += rand(1,6); 
+
+echo "Ход 1. {$player1}, поздравляем у вас {$playerPoints1}!!!", '<br>';
+
+$player1Points += rand(1,6);
+
+echo "Ход 2. {$player1}, поздравляем у вас {$playerPoints1}!!!", '<br>';
+
+$player1Points1 += rand(1,6);
+
+echo "Ход 3. {$player1}, поздравляем у вас {$playerPoints1}!!!", '<br>';
+
+
+echo "Бросаем кости игроку - {$player2}", '<br>';
+</body>
+</html>
+
+$player2Points += rand(1,6); 
+
+echo "Ход 1. {$player2}, поздравляем у вас {$playerPoints}!!!", '<br>';
+
+$player2Points += rand(1,6);
+
+echo "Ход 2. {$player2}, поздравляем у вас {$player2Points}!!!", '<br>';
+
+$player2Points += rand(1,6);
+
+echo "Ход 3. {$player2}, поздравляем у вас {$player2Points}!!!", '<br>';
+
+echo "Бросаем кости игроку - {$player3}", '<br>';
+
+$player3Points += rand(1,6); 
+
+echo "Ход 1. {$player3}, поздравляем у вас {$player3Points}!!!", '<br>';
+
+$player3Points += rand(1,6);
+
+echo "Ход 2. {$player3}, поздравляем у вас {$player3Points}!!!", '<br>';
+
+$player3Points += rand(1,6);
+
+echo "Ход 3. {$player3}, поздравляем у вас {$player3Points}!!!", '<br>';
+
+if ($player1Points > $player2Points and $player1Points > $player3Points )        
+{echo "Поздравляем, победил игрок - {$player1}";}
+  elseif ($player2Points > $player1Points and $player2Points > $player3Points)
+  {echo "Поздравляем, победил игрок - {$player2}";}
+     elseif ($player3Points > $player1Points and $player3Points > $player2Points)
+     {echo "Поздравляем, победил игрок - {$player2}";}
+        elseif ($player1Points == $player2Points and $player2Points == $player2Points)
+    
+        {echo "Ничья.";}
+          elseif (($player1Points == $player2Points and $player3Points < $player2Points) or ($player1Points == $player3Points and $player2Points < $player3Points) or ($player2Points == $player3Points and $player1Points < $player3Points))
+          {echo "Нет победителей";}
+ if ($player1Points == $player2Points and $player3Points >$player2Points)    
+ {echo "Поздравляем, победил игрок - {$player3}";}
+ if ($player1Points == $player3Points and $player2Points > $player3Points)
+     {echo "Поздравляем, победил игрок - {$player2}";}
+ if ($player2Points == $player3Points and $player1Points > $player3Points)
+     {echo "Поздравляем, победил игрок - {$player1}";}
+     
+?>
